@@ -25,10 +25,10 @@ A live demo of the application is hosted on Streamlit Community Cloud:
 
 ## 📸 Screenshots
 
-*(You can add screenshots of your app here later)*
 | Dashboard Overview | Technical Analysis | Sentiment Gauge |
 | :---: | :---: | :---: |
-| ![WhatsApp Image 2025-09-18 at 11 16 26_a0779e39](https://github.com/user-attachments/assets/9ea6224d-134b-41f2-873b-edada0e48290) | ![WhatsApp Image 2025-09-18 at 11 16 49_907f0522](https://github.com/user-attachments/assets/30f3ec39-c48d-42d6-9783-dceaaf4cf202) | ![WhatsApp Image 2025-09-18 at 11 17 35_4954e491](https://github.com/user-attachments/assets/d983001f-39be-4e93-8fcb-0c1a01f46a4f)|
+| ![Dashboard](https://github.com/user-attachments/assets/88aec835-adba-4fd6-9b24-6430f4463839) | ![Technical](https://github.com/user-attachments/assets/4d59e2f1-6a61-4284-b1cc-73ed714e1221) | ![Sentiment](https://github.com/user-attachments/assets/d9732bf5-7dd6-469a-b88b-6ee133d3bfd9) |
+
 
 ## 🛠️ Installation & Setup
 
@@ -78,16 +78,25 @@ Follow these steps to run **BharatSentiment AI** locally.
     *   See the AI's final prediction (Bullish/Bearish) with a confidence gauge.
     *   Review the sentiment breakdown of recent news headlines.
 
+
+
+```markdown
 ## 🧠 Project Architecture
+
+```
+
 BharatSentiment-AI/
 │
-├── app.py # Main Streamlit application
-├── data_acquisition.py # Fetches stock & news data, calculates indicators
-├── models.py # ML models (Technical LSTM, Sentiment, Fusion)
-├── utils.py # Visualization functions and helpers
-├── requirements.txt # Python dependencies
+├── app.py               # Main Streamlit application
+├── data\_acquisition.py  # Fetches stock & news data, calculates indicators
+├── models.py            # ML models (Technical LSTM, Sentiment, Fusion)
+├── utils.py             # Visualization functions and helpers
+├── requirements.txt     # Python dependencies
 │
-└── .idea/ # PyCharm project files (can be ignored by Git) 
+└── .idea/               # PyCharm project files (can be ignored by Git)
+
+```
+```
 
 **Data Flow**:
 1.  **Data Acquisition**: `yfinance` → OHLCV + Fundamentals → Technical Indicators calculated.
